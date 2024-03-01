@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+}
+
+.navbar {
+    background-color: black;
+    padding: 22px 30px 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.fa-cart-shopping {
+    color: #000;
+
+}
+
+.item span {
+    font-size: 18px;
+    position: absolute;
+    top: -23px;
+    right: -12px;
+    color: #fff;
+    background-color: red;
+    padding: 2px 3px;
+    border-radius: 3px;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 6px;
+    position: relative
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    column-gap: 10px;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.item {
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.Addcart {
+    border-radius: 4px;
+    position: absolute;
+    top: -16px;
+    right: -10px;
+    background: red;
+    color: white;
+    padding: 2px;
+}
+
+.item .details {
+    padding: 10px;
+}
+
+.item .details p {
+    font-size: 12px;
+    margin: 14px 0;
+}
+
+.price-quantity {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (max-width:1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 223px);
+        grid-column-gap: 10px;
+    }
+
+}
+
+@media (max-width:500px) {
+    .shop {
+        grid-template-columns: repeat(1, 320px);
+        grid-column-gap: 10px;
+    }
+
+}
+
+.cart-item {
+    display: flex;
+    gap: 12px;
+    width: 270px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-right: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.cart-leftItem {
+    display: flex;
+    flex-direction: column;
+    width: 145px;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.cart-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 20%);
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center h2{
+    padding: 15px 0px;
+}
+
+.checkout, .clear-cart {
+    padding: 6px;
+    background-color: green;
+    color: #fff;
+    border-radius: 4px;
+}
